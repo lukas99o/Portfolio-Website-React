@@ -1,0 +1,96 @@
+{
+  "employment_history": [
+    {
+      "dates": {
+        "start_date": "September 2019",
+        "end_date": "December 2019"
+      },
+      "details": {
+        "position": "Tire fitter",
+        "employer": "Bil-Månsson",
+        "location": "Ängelholm"
+      },
+      "description": "Seasonal work as a tire fitter."
+    },
+    {
+      "dates": {
+        "start_date": "June 2021",
+        "end_date": "August 2021"
+      },
+      "details": {
+        "position": "Care assistant",
+        "employer": "Båstad kommun",
+        "location": "Båstad"
+      },
+      "description": "Worked with customary tasks within home care services."
+    },
+    {
+      "dates": {
+        "start_date": "July 2022",
+        "end_date": "August 2022"
+      },
+      "details": {
+        "position": "Personal Trainer",
+        "employer": "SATS",
+        "location": "Stockholm"
+      },
+      "description": "Train people, provide advice, and work at the reception."
+    },
+    {
+      "dates": {
+        "start_date": "August 2022",
+        "end_date": "October 2022"
+      },
+      "details": {
+        "position": "Warehouse worker",
+        "employer": "Flemingsberg",
+        "location": "Flemingsberg"
+      },
+      "description": "Assembly, disassembly, logistics, customer service, and reconditioning."
+    },
+    {
+      "dates": {
+        "start_date": "November 2022",
+        "end_date": "Current Position"
+      },
+      "details": {
+        "position": "Retail assistant",
+        "employer": "Willys",
+        "location": "Skogås"
+      },
+      "description": "Shelving, date checking, and inventory."
+    }
+  ],
+  "education": [
+    {
+      "program": "Automotive Mechanic",
+      "institution": "Vehicle and Transport Program",
+      "location": "Svalöv",
+      "start_date": "June 2016",
+      "end_date": "July 2019",
+      "description": "High school specialization."
+    },
+    {
+      "program": "Komvux",
+      "institution": "Vuxen Utbildning",
+      "location": "Båstad",
+      "start_date": "January 2020",
+      "end_date": "August 2020",
+      "description": "Supplementary grades for basic eligibility for university studies."
+    },
+    {
+      "program": "Health coach",
+      "institution": "Molkoms folkhögskola",
+      "location": "Molkom",
+      "start_date": "August 2021",
+      "end_date": "June 2022",
+      "description": "Health coach specializing in personal training, nutrition, rehabilitation, and prehabilitation."
+    }
+  ],
+  "additional_info": {
+    "drivers_license": "B, manual and forklift license a, b",
+    "languages": "Fluent in both written and spoken Swedish and English.",
+    "references": "References are available upon request.",
+    "current_study": "Currently studying fullstack developer at Chas Academy in Stockholm ending June 2025"
+  }
+}
