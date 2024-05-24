@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/PortfolioWebsiteReact/static/css/main.46ed765a.css",
+    "main.js": "/PortfolioWebsiteReact/static/js/main.33cc09d9.js",
+    "static/js/453.978c7d90.chunk.js": "/PortfolioWebsiteReact/static/js/453.978c7d90.chunk.js",
+    "static/media/Smilla Jäsp.jpeg": "/PortfolioWebsiteReact/static/media/Smilla Jäsp.15f5fa4be2dafc90d71e.jpeg",
+    "static/media/epic space.webp": "/PortfolioWebsiteReact/static/media/epic space.67ea458e127969536649.webp",
+    "static/media/portfolio-background.webp": "/PortfolioWebsiteReact/static/media/portfolio-background.6916b93dc6d2940be25d.webp",
+    "static/media/Bild på mig och frida.png": "/PortfolioWebsiteReact/static/media/Bild på mig och frida.8195fd78058a725688dc.png",
+    "static/media/profil-bild.jpg": "/PortfolioWebsiteReact/static/media/profil-bild.caed7867a1ee5f4528a7.jpg",
+    "static/media/bank.webp": "/PortfolioWebsiteReact/static/media/bank.bce5a74147b62b14991f.webp",
+    "static/media/js certificate.png": "/PortfolioWebsiteReact/static/media/js certificate.c75697324c39bebfc739.png",
+    "static/media/certification html css.png": "/PortfolioWebsiteReact/static/media/certification html css.5620fb7d8a1990c02509.png",
+    "static/media/musicApi.webp": "/PortfolioWebsiteReact/static/media/musicApi.0ee77bd6e7c58b374220.webp",
+    "index.html": "/PortfolioWebsiteReact/index.html",
+    "main.46ed765a.css.map": "/PortfolioWebsiteReact/static/css/main.46ed765a.css.map",
+    "main.33cc09d9.js.map": "/PortfolioWebsiteReact/static/js/main.33cc09d9.js.map",
+    "453.978c7d90.chunk.js.map": "/PortfolioWebsiteReact/static/js/453.978c7d90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46ed765a.css",
+    "static/js/main.33cc09d9.js"
+  ]
+}
