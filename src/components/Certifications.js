@@ -14,26 +14,22 @@ function Cert() {
     return (
         <div>
             <main className="cert-main">
-                <div class="cert-content">
+                <div className="cert-content">
                     <h1>My Certifications!</h1>
                     
-                    <div class="cert1">
+                    <div className="cert1">
                         <h3>FreeCodeCamp Responsive Web Design Certification</h3>
                         <button onClick={htmlCss}>Click to See Certificate</button>
                         <img src={cert1} alt="Html, Css Certificate"/>
                     </div>
 
-                    <div class="cert2">
+                    <div className="cert2">
                         <h3>FreeCodeCamp JavaScript Algorithms and Data Structures Certification</h3>
                         <button onClick={js}>Click to See Certificate</button>
                         <img src={cert2} alt="Html, Css Certificate"/>
                     </div>
                 </div>
             </main>
-
-            <footer>
-                <script src="scripts/qwerty.js"></script>
-            </footer>
         </div>
     )
 }

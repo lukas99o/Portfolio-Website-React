@@ -1,27 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-function UseKeySequenceDetector(targetSequence = '1337', callback) {
+function useKeySequenceDetector(targetSequence = '1337', callback) {
     const [keySequence, setKeySequence] = useState('');
 
     useEffect(() => {
-        function handleKeyPress(event) {
-            const updatedSequence = keySequence + event.key;
-            if (targetSequence.startsWith(updatedSequence)) {
-                setKeySequence(updatedSequence);
-                if (updatedSequence === targetSequence) {
-                    callback();
-                    setKeySequence('');
-                }
+        const handleKeyPress = (event) => {
+            const newKeySequence = keySequence + event.key;
+            if (newKeySequence === targetSequence) {
+                callback();
+                setKeySequence('');
+            } else if (targetSequence.startsWith(newKeySequence)) {
+                setKeySequence(newKeySequence);
             } else {
-                setKeySequence('')
+                setKeySequence('');
             }
-        }
+        };
 
-        window.addEventListener('keypress', handleKeyPress);
-        return () => window.removeEventListener('keypress', handleKeyPress);
-    }, [keySequence, targetSequence, callback]);
+        window.addEventListener('keydown', handleKeyPress);
+        return () => window.removeEventListener('keydown', handleKeyPress);
+    }, [keySequence, targetSequence, callback]); 
 
     return keySequence;
 }
 
-export default UseKeySequenceDetector;
+export default useKeySequenceDetector;
