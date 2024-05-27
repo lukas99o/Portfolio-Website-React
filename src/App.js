@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Menu from "./components/menu";
@@ -28,9 +29,8 @@ function App() {
   });
 
   return (
-    <Router>
+    <Router basename="/PortfolioWebsiteReact">
       <div>                                                                        
-
         <Menu />
         <Switch>
           <Route path="/Welcome">
