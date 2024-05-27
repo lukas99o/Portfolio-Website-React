@@ -96,7 +96,6 @@ function App() {
   });
 
   return (
-    <Router basename="/PortfolioWebsiteReact">
       <div>                                                                        
         <Menu />
         <Switch>
@@ -116,7 +115,6 @@ function App() {
           </div> 
         )}
       </div>
-    </Router>
   );
 }
 
