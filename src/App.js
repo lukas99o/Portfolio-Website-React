@@ -33,8 +33,8 @@ function App() {
       <div>                                                                        
         <Menu />
         <Switch>
-          <Route path="/Welcome">
-              <Welcome />
+          <Route exact path="/">
+              <Welcome /> 
           </Route>
           <Route path="/Me" exact>
             <Me />
