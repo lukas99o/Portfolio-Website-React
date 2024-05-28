@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortfolioWebsiteReact/static/css/main.46ed765a.css",
-    "main.js": "/PortfolioWebsiteReact/static/js/main.511c1967.js",
+    "main.js": "/PortfolioWebsiteReact/static/js/main.8ae869ca.js",
     "static/js/453.978c7d90.chunk.js": "/PortfolioWebsiteReact/static/js/453.978c7d90.chunk.js",
     "static/media/Smilla Jäsp.jpeg": "/PortfolioWebsiteReact/static/media/Smilla Jäsp.15f5fa4be2dafc90d71e.jpeg",
     "static/media/epic space.webp": "/PortfolioWebsiteReact/static/media/epic space.67ea458e127969536649.webp",
@@ -14,11 +14,11 @@
     "static/media/musicApi.webp": "/PortfolioWebsiteReact/static/media/musicApi.0ee77bd6e7c58b374220.webp",
     "index.html": "/PortfolioWebsiteReact/index.html",
     "main.46ed765a.css.map": "/PortfolioWebsiteReact/static/css/main.46ed765a.css.map",
-    "main.511c1967.js.map": "/PortfolioWebsiteReact/static/js/main.511c1967.js.map",
+    "main.8ae869ca.js.map": "/PortfolioWebsiteReact/static/js/main.8ae869ca.js.map",
     "453.978c7d90.chunk.js.map": "/PortfolioWebsiteReact/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46ed765a.css",
-    "static/js/main.511c1967.js"
+    "static/js/main.8ae869ca.js"
   ]
 }
