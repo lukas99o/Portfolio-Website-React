@@ -124,7 +124,7 @@ function Contact() {
 
       <div className="contact-fun">
         <button id="partyButton">Start Party!</button>
-        <audio id="partyMusic" src="/audio/LEEONA_-_LEEONA_-_Do_I.mp3"></audio>
+        <audio id="partyMusic" src="./audio/LEEONA_-_LEEONA_-_Do_I.mp3"></audio>
       </div>
     </div>
   );
