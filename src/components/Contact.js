@@ -1,29 +1,7 @@
-/* global Email */
 import { useEffect } from "react";
 import profilepicture from "../images/profil-bild.jpg";
 import React from "react";
-
-/*
-function sendEmail(e) {
-  e.preventDefault();
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Port: "2525",
-    Username: "lukas99o@hotmail.com",
-    Password: "9E7AFAB244BC3645A98677A7313C01BCF635",
-    To: "lukas99o@hotmail.com",
-    From: document.getElementById("email").value,
-    Subject: "Email from Portfolio Website!",
-    Body: "Name: " + document.getElementById("name").value
-      + "<br> Email: " + document.getElementById("email").value
-      + "<br> Phone number: " + document.getElementById("phone").value
-      + "<br> <br> Message: " + document.getElementById("message").value
-  }).then(
-    message => alert("Message Sent Successfully")
-  );
-  e.target.reset();
-}
-*/
+import music from "../audio/music.mp3";
 
 function Contact() {
   useEffect(() => {
@@ -124,7 +102,7 @@ function Contact() {
 
       <div className="contact-fun">
         <button id="partyButton">Start Party!</button>
-        <audio id="partyMusic" src="./audio/LEEONA_-_LEEONA_-_Do_I.mp3"></audio>
+        <audio id="partyMusic" src={music}></audio>
       </div>
     </div>
   );
