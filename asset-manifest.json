@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-React/static/css/main.5767b80a.css",
-    "main.js": "/Portfolio-Website-React/static/js/main.e79ff44b.js",
+    "main.js": "/Portfolio-Website-React/static/js/main.b43f27e2.js",
     "static/js/453.978c7d90.chunk.js": "/Portfolio-Website-React/static/js/453.978c7d90.chunk.js",
+    "static/media/music.mp3": "/Portfolio-Website-React/static/media/music.17cd5b622b75c652e606.mp3",
     "static/media/Smilla Jäsp.jpeg": "/Portfolio-Website-React/static/media/Smilla Jäsp.15f5fa4be2dafc90d71e.jpeg",
     "static/media/epic space.webp": "/Portfolio-Website-React/static/media/epic space.67ea458e127969536649.webp",
     "static/media/portfolio-background.webp": "/Portfolio-Website-React/static/media/portfolio-background.6916b93dc6d2940be25d.webp",
@@ -14,11 +15,11 @@
     "static/media/musicApi.webp": "/Portfolio-Website-React/static/media/musicApi.0ee77bd6e7c58b374220.webp",
     "index.html": "/Portfolio-Website-React/index.html",
     "main.5767b80a.css.map": "/Portfolio-Website-React/static/css/main.5767b80a.css.map",
-    "main.e79ff44b.js.map": "/Portfolio-Website-React/static/js/main.e79ff44b.js.map",
+    "main.b43f27e2.js.map": "/Portfolio-Website-React/static/js/main.b43f27e2.js.map",
     "453.978c7d90.chunk.js.map": "/Portfolio-Website-React/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5767b80a.css",
-    "static/js/main.e79ff44b.js"
+    "static/js/main.b43f27e2.js"
   ]
 }
