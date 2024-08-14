@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Menu from "./components/menu";
 import Me from './components/Me';
 import Cv from './components/Cv';
@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import Welcome from "./components/Welcome";
 import './styles/App.css';
 import useKeySequenceDetector from './hooks/KeySequenceDetector';
+
+const basename = process.env.Public_URL;
 
 function App() {
   const [message, setMessage] = useState('');
@@ -27,17 +29,19 @@ function App() {
   });
 
   return (
-      <div>                                                                        
-        <Menu />
-        <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route exact path="/Me" component={Me} />
-          <Route exact path="/Cv" component={Cv} />
-          <Route exact path="/Portfolio" component={Portfolio} />
-          <Route exact path="/Certifications" component={Certifications} />
-          <Route exact path="/Contact" component={Contact} />
-          <Redirect to="/" />
-        </Switch>
+      <div>
+        <Router>                                                                   
+          <Menu />
+          <Switch>
+            <Route exact path="/" component={Welcome} />
+            <Route exact path="/Me" component={Me} />
+            <Route exact path="/Cv" component={Cv} />
+            <Route exact path="/Portfolio" component={Portfolio} />
+            <Route exact path="/Certifications" component={Certifications} />
+            <Route exact path="/Contact" component={Contact} />
+            <Redirect to="/" />
+          </Switch>
+        </Router>     
         {showMessage && (
           <div className="message-container">
             <div className={animate ? 'epicEffect' : ''}>
