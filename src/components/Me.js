@@ -13,7 +13,7 @@ function Me() {
                 However, I soon realized that game development was far more challenging than I initially anticipated. Undeterred, I embarked on a self-learning journey to master programming.
                 I commenced my learning journey with FreeCodeCamp, a platform where I delved into HTML, CSS, and JavaScript. 
                 As my passion for programming grew, I decided to pursue formal education in the field. 
-                Presently, I am enrolled in a full-stack .NET program at Chas Academy in Stockholm, where I am honing my skills. I am set to complete my studies in June 2025."
+                Presently, I am enrolled in a full-stack .NET program at Chas Academy in Stockholm, where I am honing my skills. I am set to complete my studies in June 2025.
                 </p>
             </div>
 
