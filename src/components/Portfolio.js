@@ -4,10 +4,11 @@ import MusicAPI from "../images/musicApi.webp";
 import c from "../images/c#.png";
 import romanNumerals from "../images/roman-numerals.png";
 import phone from "../images/phone.png"; 
-import palindrome from "..//images/palindrome.jpg";
-import nintendo from "..//images/nintendo.png";
-import racin from "..//images/racin.jpg";
-import paul from "..//images/paul.jpg";
+import palindrome from "../images/palindrome.jpg";
+import nintendo from "../images/nintendo.png";
+import racin from "../images/racin.jpg";
+import paul from "../images/paul.jpg";
+import cashRegister from "../images/cash-register.webp";
 
 function Portfolio() {
   // Temporaly removed method loading project name because of github api request limitations
@@ -183,6 +184,19 @@ function Portfolio() {
               <div className='img-github-container'>
                 <img src={paul}></img>
                 <a href="https://github.com/lukas99o/Paul-Stamets-Tribute-Page.git" target="blank">
+                <button>Github</button>
+                </a>
+              </div>
+            </div>
+
+            <div className='row'>
+              <h2>Cash Register</h2>
+              <p>
+              The Cash Register Application is a simple web-based tool that simulates a cash register. It generates a random price for items and calculates the change due when a customer pays. Users can click the "Generate Random Total" button to get a random price, enter the cash amount given by the customer, and then click the "Purchase" button to see the change due. The app also clears the input fields when a new price is generated, providing a clean slate for each transaction.
+              </p>
+              <div className='img-github-container'>
+                <img src={cashRegister}></img>
+                <a href="https://github.com/lukas99o/Cash-Register.git" target="blank">
                 <button>Github</button>
                 </a>
               </div>
