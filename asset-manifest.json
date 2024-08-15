@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-React/static/css/main.5767b80a.css",
-    "main.js": "/Portfolio-Website-React/static/js/main.9050b9d8.js",
+    "main.js": "/Portfolio-Website-React/static/js/main.060f19ab.js",
     "static/js/453.978c7d90.chunk.js": "/Portfolio-Website-React/static/js/453.978c7d90.chunk.js",
     "static/media/LEEONA_-_LEEONA_-_Do_I.mp3": "/Portfolio-Website-React/static/media/LEEONA_-_LEEONA_-_Do_I.17cd5b622b75c652e606.mp3",
     "static/media/Smilla Jäsp.jpeg": "/Portfolio-Website-React/static/media/Smilla Jäsp.15f5fa4be2dafc90d71e.jpeg",
@@ -16,15 +16,16 @@
     "static/media/certification html css.png": "/Portfolio-Website-React/static/media/certification html css.5620fb7d8a1990c02509.png",
     "static/media/musicApi.webp": "/Portfolio-Website-React/static/media/musicApi.0ee77bd6e7c58b374220.webp",
     "static/media/racin.jpg": "/Portfolio-Website-React/static/media/racin.7e067a365dd61755c233.jpg",
+    "static/media/cash-register.webp": "/Portfolio-Website-React/static/media/cash-register.1cd19c5caeeee985a348.webp",
     "static/media/nintendo.png": "/Portfolio-Website-React/static/media/nintendo.020c701699d59a9d979b.png",
     "static/media/roman-numerals.png": "/Portfolio-Website-React/static/media/roman-numerals.6ab54634c5d91c3d0fe3.png",
     "index.html": "/Portfolio-Website-React/index.html",
     "main.5767b80a.css.map": "/Portfolio-Website-React/static/css/main.5767b80a.css.map",
-    "main.9050b9d8.js.map": "/Portfolio-Website-React/static/js/main.9050b9d8.js.map",
+    "main.060f19ab.js.map": "/Portfolio-Website-React/static/js/main.060f19ab.js.map",
     "453.978c7d90.chunk.js.map": "/Portfolio-Website-React/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5767b80a.css",
-    "static/js/main.9050b9d8.js"
+    "static/js/main.060f19ab.js"
   ]
 }
