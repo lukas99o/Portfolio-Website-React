@@ -9,6 +9,7 @@ import nintendo from "../images/nintendo.png";
 import racin from "../images/racin.jpg";
 import paul from "../images/paul.jpg";
 import cashRegister from "../images/cash-register.webp";
+import PokeDex from "../images/PokeDex.png";
 
 function Portfolio() {
   // Temporaly removed method loading project name because of github api request limitations
@@ -197,6 +198,19 @@ function Portfolio() {
               <div className='img-github-container'>
                 <img src={cashRegister}></img>
                 <a href="https://github.com/lukas99o/Cash-Register.git" target="blank">
+                <button>Github</button>
+                </a>
+              </div>
+            </div>
+
+            <div className='row'>
+              <h2>PokéDex</h2>
+              <p>
+              The Pokémon Search App is a simple web tool for looking up Pokémon. Enter a Pokémon’s name, and the app shows you details like its name, ID, height, weight, and stats such as HP and attack. You’ll also see its picture and get a color-coded background based on its type. The app is easy to use on both computers and mobile devices. It pulls information from the PokéAPI and presents it in a clear, user-friendly way. It’s a handy way to quickly get Pokémon info without any fuss.
+              </p>
+              <div className='img-github-container'>
+                <img src={PokeDex}></img>
+                <a href="https://github.com/lukas99o/PokeDex.git" target="blank">
                 <button>Github</button>
                 </a>
               </div>
