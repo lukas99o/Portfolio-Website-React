@@ -72,7 +72,7 @@
     },
     {
       "program": "Komvux",
-      "institution": "Vuxen Utbildning",
+      "institution": "Vuxenutbildning",
       "location": "Båstad",
       "start_date": "January 2020",
       "end_date": "August 2020",
@@ -91,6 +91,6 @@
     "drivers_license": "B, manual and forklift license a, b",
     "languages": "Fluent in both written and spoken Swedish and English.",
     "references": "References are available upon request.",
-    "current_study": "Currently studying fullstack developer at Chas Academy in Stockholm ending June 2025"
+    "current_study": "Currently studying Full-Stack Developer at Chas Academy in Stockholm ending June 2025"
   }
 }

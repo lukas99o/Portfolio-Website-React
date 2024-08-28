@@ -1,6 +1,7 @@
 import React from 'react';
 import cert1 from '../images/certification html css.png';
 import cert2 from '../images/js certificate.png';
+import cert3 from '../images/New js Certificate.png';
 
 function Cert() {
     const htmlCss = () => {
@@ -24,9 +25,15 @@ function Cert() {
                     </div>
 
                     <div className="cert2">
-                        <h3>FreeCodeCamp JavaScript Algorithms and Data Structures Certification</h3>
+                        <h3>FreeCodeCamp Legacy JavaScript Algorithms and Data Structures Certification</h3>
                         <button onClick={js}>Click to See Certificate</button>
-                        <img src={cert2} alt="Html, Css Certificate"/>
+                        <img src={cert2} alt="legacy js Certificate"/>
+                    </div>
+
+                    <div className="cert3">
+                        <h3>FreeCodeCamp New JavaScript Algorithms and Data Structures (Beta) Certification</h3>
+                        <button onClick={js}>Click to See Certificate</button>
+                        <img src={cert3} alt="new js Certificate"/>
                     </div>
                 </div>
             </main>

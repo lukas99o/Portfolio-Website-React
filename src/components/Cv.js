@@ -20,7 +20,7 @@ function CV() {
                         <header className="cv-header">
                             <h1>Lukas Olsson</h1>
                             <p>Home address: Småbrukets backe 60</p>
-                            <p>Post address: 141 39, Huddinge</p> 
+                            <p>Mailing address: 141 39, Huddinge</p> 
                             <p>Phone number: 0762920163</p> 
                             <p>Email: lukas99o@hotmail.com</p>
                         </header>
