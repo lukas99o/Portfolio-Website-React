@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website-React/static/css/main.5767b80a.css",
-    "main.js": "/Portfolio-Website-React/static/js/main.fabc1fd3.js",
+    "main.css": "/Portfolio-Website-React/static/css/main.3160c464.css",
+    "main.js": "/Portfolio-Website-React/static/js/main.d04cf6a8.js",
     "static/js/453.978c7d90.chunk.js": "/Portfolio-Website-React/static/js/453.978c7d90.chunk.js",
     "static/media/LEEONA_-_LEEONA_-_Do_I.mp3": "/Portfolio-Website-React/static/media/LEEONA_-_LEEONA_-_Do_I.17cd5b622b75c652e606.mp3",
     "static/media/Smilla Jäsp.jpeg": "/Portfolio-Website-React/static/media/Smilla Jäsp.15f5fa4be2dafc90d71e.jpeg",
@@ -13,6 +13,7 @@
     "static/media/bank.webp": "/Portfolio-Website-React/static/media/bank.bce5a74147b62b14991f.webp",
     "static/media/phone.png": "/Portfolio-Website-React/static/media/phone.c9363976a6f6cc599b5e.png",
     "static/media/js certificate.png": "/Portfolio-Website-React/static/media/js certificate.c75697324c39bebfc739.png",
+    "static/media/New js Certificate.png": "/Portfolio-Website-React/static/media/New js Certificate.24bb1e747316744e32d8.png",
     "static/media/certification html css.png": "/Portfolio-Website-React/static/media/certification html css.5620fb7d8a1990c02509.png",
     "static/media/musicApi.webp": "/Portfolio-Website-React/static/media/musicApi.0ee77bd6e7c58b374220.webp",
     "static/media/PokeDex.png": "/Portfolio-Website-React/static/media/PokeDex.2934c97e4ad9b6b1abaf.png",
@@ -21,12 +22,12 @@
     "static/media/nintendo.png": "/Portfolio-Website-React/static/media/nintendo.020c701699d59a9d979b.png",
     "static/media/roman-numerals.png": "/Portfolio-Website-React/static/media/roman-numerals.6ab54634c5d91c3d0fe3.png",
     "index.html": "/Portfolio-Website-React/index.html",
-    "main.5767b80a.css.map": "/Portfolio-Website-React/static/css/main.5767b80a.css.map",
-    "main.fabc1fd3.js.map": "/Portfolio-Website-React/static/js/main.fabc1fd3.js.map",
+    "main.3160c464.css.map": "/Portfolio-Website-React/static/css/main.3160c464.css.map",
+    "main.d04cf6a8.js.map": "/Portfolio-Website-React/static/js/main.d04cf6a8.js.map",
     "453.978c7d90.chunk.js.map": "/Portfolio-Website-React/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5767b80a.css",
-    "static/js/main.fabc1fd3.js"
+    "static/css/main.3160c464.css",
+    "static/js/main.d04cf6a8.js"
   ]
 }
