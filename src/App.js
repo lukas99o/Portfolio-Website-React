@@ -6,7 +6,6 @@ import Cv from './components/Cv';
 import Portfolio from './components/Portfolio';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
-import Welcome from "./components/Welcome";
 import './styles/App.css';
 import useKeySequenceDetector from './hooks/KeySequenceDetector';
 
@@ -33,13 +32,12 @@ function App() {
         <Router>                                                                   
           <Menu />
           <Switch>
-            <Route exact path="/" component={Welcome} />
             <Route exact path="/Me" component={Me} />
             <Route exact path="/Cv" component={Cv} />
             <Route exact path="/Portfolio" component={Portfolio} />
             <Route exact path="/Certifications" component={Certifications} />
             <Route exact path="/Contact" component={Contact} />
-            <Redirect to="/" />
+            <Redirect to="/Me" />
           </Switch>
         </Router>     
         {showMessage && (

@@ -11,59 +11,10 @@ import paul from "../images/paul.jpg";
 import cashRegister from "../images/cash-register.webp";
 import PokeDex from "../images/PokeDex.png";
 
-function Portfolio() {
-  // Temporaly removed method loading project name because of github api request limitations
-  /*
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const projectData = [
-    { username: 'idris-ahmed19', projectName: 'Bank-Application-Project' },
-    { username: 'Magdagasikara', projectName: 'MusicAPI' },
-    { username: 'lukas99o', projectName: 'Technical-Documentation-Page' },
-    { username: 'lukas99o', projectName: 'Roman-Numeral-Converter' },
-    { username: 'lukas99o', projectName: 'Telephone-Number-Validator' },
-    { username: 'lukas99o', projectName: 'Palindrome-Checker' },
-    { username: 'lukas99o', projectName: 'Nintendo-Survey-Form' },
-    { username: 'lukas99o', projectName: 'Thread-Racin' },
-    { username: 'lukas99o', projectName: 'Paul-Stamets-Tribute-Page' }
-  ];
-  
-  
-
-  useEffect(() => {
-    fetchGithubProjects();
-  }, []);
-
-  const fetchGithubProjects = async () => {
-    try {
-      const projectsData = [];
-      for (const {username, projectName } of projectData) {
-        const response = await fetch(`https://api.github.com/repos/${username}/${projectName}`);
-        if (response.ok) {
-          const data = await response.json();
-          projectsData.push(data);
-        } else {
-          throw new Error(`Failed to fetch project: ${projectName}`);
-        }
-      }
-      console.log(projectsData);
-      setProjects(projectsData);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
-  */
-
-  /* {loading ? (
-    //<p>Loading projects...</p>
-  // )}
-   ) : ( */
-  
+function Portfolio() {  
   return (
     <div className="portfolio">   
-      <h1>My Portfolio!</h1>   
+      <h1>Portfolio</h1>   
         <div className="portfolio-container">
             <div className='row'>
               <h2>The Bank Application</h2>

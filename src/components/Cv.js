@@ -16,6 +16,7 @@ function CV() {
         return (
             <div className="cv-body">
                 <div className='cv-main'>
+                    <h1>CV</h1>
                     <div className='cv-container'>
                         <header className="cv-header">
                             <h1>Lukas Olsson</h1>
