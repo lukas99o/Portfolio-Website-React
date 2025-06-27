@@ -11,17 +11,19 @@ function CV() {
     }, []);
 
     if (employmentHistory.length === 0 || educationHistory.length === 0) {
-        return <div className="cv-body">Loading...</div>; 
+        // return <div className="cv-body">Loading...</div>; 
     } else {
         return (
             <div className="cv-body">
                 <div className='cv-main'>
-                    <h1>CV</h1>
+                    <h1 className="cv-title">CV</h1>
                     <div className='cv-container'>
                         <header className="cv-header">
                             <h1>Lukas Olsson</h1>
-                            <p>Home address: Småbrukets backe 60</p>
-                            <p>Mailing address: 141 39, Huddinge</p> 
+                            <div>
+                                <p>Home address: Småbrukets backe 60</p>
+                                <p>Mailing address: 141 58, Huddinge</p> 
+                            </div>
                             <p>Phone number: 0762920163</p> 
                             <p>Email: lukas99o@hotmail.com</p>
                         </header>

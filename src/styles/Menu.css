@@ -4,12 +4,12 @@
 
 .menu-items {
   background: #0B0F2B;
-  height: 10vh;
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 10;
 }
@@ -57,6 +57,43 @@
 .nav-links.active:hover {
   color: #222;
 }
+
+.party-button-ul {
+  list-style-type: none;
+}
+
+.party-btn {
+  background: #ff0055;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.party-btn:hover {
+  background: #cc0044;
+  transform: scale(1.1);
+}
+
+.party-btn.active {
+  background: #444;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 8px #ff0055; }
+  50% { transform: scale(1.1); box-shadow: 0 0 16px #ff3388; }
+  100% { transform: scale(1); box-shadow: 0 0 8px #ff0055; }
+}
+
 
 @media screen and (max-width: 960px) {
   .menu-icon {

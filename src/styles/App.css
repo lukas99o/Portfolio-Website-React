@@ -11,20 +11,14 @@
   background: #FFFDF8; 
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .portfolio h1 {
-  color: #222222; 
-  background-color: transparent; 
-  border-radius: 20px;
+  text-align: center;
   font-size: 3rem;
-  align-self: center;
-  width: fit-content;
-  margin-bottom: 20px;
   margin-top: 40px;
-  box-shadow: none; 
-  transition: transform 0.3s ease;
-  text-shadow: none;
+  margin-bottom: 20px;
 }
 
 .portfolio-container {
@@ -157,7 +151,6 @@
 .cert-main {
   height: 100%;
   background: #FFFDF8;
-  padding-bottom: 50px;
   display: flex;
   align-items: center; 
   justify-content: center; 
@@ -169,26 +162,10 @@
 }
 
 .cert-content h1 {
-  transition: all 0.5s ease;
-  font-size: 4rem; 
-  color: #ffffff; 
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); 
-  background: linear-gradient(to right, #4a90e2, #00bfff); 
-  padding: 20px 40px; 
-  width: fit-content;
-  border-radius: 12px; 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
-  text-align: center; 
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 75px;
-  margin-bottom: 50px;
-}
-
-.cert-content h1:hover {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px; 
+  margin-bottom: 0px; 
 }
 
 .cert-content h3 {
@@ -219,7 +196,7 @@
 }
 
 .cert-content .cert1, .cert2, .cert3 {
-  background-color: #f8f9fa;
+  background-color: #eeeeee;
   padding: 30px;
   border-radius: 1rem;
   margin: 20px auto 50px;
@@ -261,91 +238,106 @@
 /* Me component */
 .me-body {
   display: flex;
-  background-color: #FFFDF8; 
   flex-direction: column;
-  height: 100%;
   align-items: center;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px; 
+  padding: 60px 20px;
+}
+
+.me-content {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
 }
 
 .me-content h1 {
-  margin-bottom: 20px;
-  font-size: 3rem; 
-  color: #333; 
-  font-weight: 600; 
+  font-size: 3.5rem;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.me-content h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #009688;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .me-content p {
-  font-size: 1.2rem; 
-  width: 80vw; 
-  color: #555;
-  line-height: 1.6; 
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 .me-images {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .me-images img {
-  width: 300px; 
-  height: 300px; 
-  margin: 20px;
-  border: solid 4px #333; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease-in-out; 
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #009688;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .me-images img:hover {
-  transform: scale(1.1); 
-  border-color: #009688; 
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 768px){
-  .me-images {
-      flex-direction: column; 
+@media screen and (max-width: 768px) {
+  .me-body {
+    padding: 40px 10px;
   }
 
   .me-content h1 {
-    margin-top: 0px;
+    font-size: 2.5rem;
+  }
+
+  .me-content p {
+    font-size: 1rem;
   }
 
   .me-images img {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 20px;
-  }
-
-  .me-body p {
-    width: 90vw;
-    margin-bottom: 0px;
-  }
-
-  .me-body h1 {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .me-body{
-    height: 100%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    width: 90%;
   }
 }
 
 /* Cv component */
 .cv-body {
-  background-color: #FFFDF8; 
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.cv-title {
+  font-size: 3.5rem;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.cv-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #009688;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .cv-main {
@@ -357,7 +349,6 @@
 }
 
 .cv-container {
-  margin-top: 50px;
   background-color: #eeeeee; 
   padding: 30px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
@@ -366,7 +357,6 @@
   flex-direction: column;
   width: 100%;
   max-width: 21cm; 
-  box-sizing: border-box; 
 }
 
 .cv-container h1, .cv-container h2, .cv-container p {
@@ -377,12 +367,11 @@
   font-size: 26px; 
   color: #273746;
   padding-bottom: 15px;
-  border-bottom: 3px solid #273746;
+  border-bottom: 3px solid #009688;
   margin-bottom: 25px;
 }
 
 .cv-container h2 {
-  color: #2e86c1;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -413,146 +402,129 @@
 
 /* Contact Component */
 .contact-body {
-  background: linear-gradient(to right, #001660, #0044cc);
-  height: 100vh;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
-.contact-container #name {
-  margin-top: 25px;
+.contact-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .contact-container {
   width: 100%;
-  height: fit-content;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .contact-container form {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 2vw 4vw;
-  width: 90%;
+  padding: 2rem;
+  width: 100%;
   max-width: 600px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.contact-container form:hover {
-  transform: translateY(-5px);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-container form h3 {
-  color: #333;
-  font-weight: 800;
+  color: #222;
+  font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .contact-container form input,
 .contact-container textarea {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   margin: 10px 0;
-  padding: 15px;
-  outline: none;
-  background: #f9f9f9;
+  padding: 14px;
   font-size: 16px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  border-radius: 6px;
+  background: #fafafa;
+  transition: border 0.3s ease;
 }
 
 .contact-container form input:focus,
 .contact-container textarea:focus {
+  border-color: #007bff;
   background: #fff;
-  border-color: #0044cc;
+  outline: none;
 }
 
 .contact-container form button {
-  padding: 15px;
-  background: #ff5361;
-  color: #ffffff;
-  font-size: 18px;
-  border: 0;
-  outline: none;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
   cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
-  border-radius: 30px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact-container form button:hover {
-  transform: scale(1.05);
-  background: #ff3344;
-  box-shadow: 0 0 20px rgba(255, 83, 97, 0.5);
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contact-container img {
   height: auto;
   width: 100%;
   max-width: 400px;
-  max-height: 300px;
-  border: 2px solid #ddd;
   border-radius: 10px;
-  align-self: center;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .contact-container img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .contact-fun {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .contact-fun button {
   margin-top: 25px;
-  padding: 15px 30px;
-  background: linear-gradient(45deg, #ff0066, #ff6600);
+  padding: 12px 28px;
+  background: #ff6600;
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .contact-fun button:hover {
-  background: linear-gradient(45deg, #ff6600, #ff0066);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  background: #e05500;
+  transform: scale(1.05);
 }
 
 .contact-fun button:active {
-  background: linear-gradient(45deg, #ff0066, #ff6600);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 @media screen and (max-width: 768px) {
   .contact-body {
-    height: 100%;
-    padding-bottom: 5vh;
-    padding-top: 3vh;
+    padding: 20px 0;
   }
 
-  .contact-fun button {
-    margin-top: 15px;
+  .contact-container form {
+    padding: 1.5rem;
   }
 }
 
@@ -576,7 +548,6 @@
   animation: spinAndColorChange 2s linear;
 }
 
-/* Message-container*/
 .message-container {
   position: fixed;  
   top: 0;          
@@ -591,3 +562,4 @@
   font-size: 5rem;
   color: rgb(0, 255, 255);
 }
+

@@ -16,7 +16,7 @@ function Cert() {
         <div>
             <main className="cert-main">
                 <div className="cert-content">
-                    <h1>My Certifications!</h1>
+                    <h1>Certifications</h1>
                     
                     <div className="cert1">
                         <h3>FreeCodeCamp Responsive Web Design Certification</h3>

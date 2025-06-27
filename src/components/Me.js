@@ -8,7 +8,7 @@ function Me() {
             <div className="me-content">
                 <h1>Me</h1>
                 <p>
-                    My name is Lukas Olsson, and I reside in Stockholm, Sweden, sharing an apartment with my girlfriend and our cat. 
+                    My name is Lukas Olsson, and I live in Stockholm, Sweden, sharing an apartment with my lovely girlfriend and our cat. 
                     In my free time, I enjoy activities where movement is involved, such as going to the gym, walking in nature, going for runs and hanging out with my girlfriend and friends.
                     I also have a passion for coding my own projects and gaming whenever I find a quality game that captures my interest.
                 </p>

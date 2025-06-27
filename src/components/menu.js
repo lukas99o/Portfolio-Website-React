@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../styles/Menu.css";
 import MenuItems from "./MenuItems";
+import music from "../audio/LEEONA_-_LEEONA_-_Do_I.mp3"; 
 
 function Menu() {
   const [clicked, setClicked] = useState(false);
+  const [partyMode, setPartyMode] = useState(false);
+  const intervalRef = useRef(null);
+  const audioRef = useRef(null);
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -12,7 +16,7 @@ function Menu() {
 
   const closeMenu = () => {
     setClicked(false);
-  }
+  };
 
   useEffect(() => {
     if (clicked) {
@@ -22,25 +26,64 @@ function Menu() {
     }
   }, [clicked]);
 
+  useEffect(() => {
+    if (partyMode) {
+      audioRef.current?.play();
+
+      intervalRef.current = setInterval(() => {
+        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        document.body.style.background = randomColor;
+      }, 500);
+    } else {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+      audioRef.current?.pause();
+      audioRef.current.currentTime = 0;
+      document.body.style.background = ""; 
+    }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [partyMode]);
+
   return (
     <nav className="menu-items">
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
       <ul className={clicked ? 'menu menu-active' : 'menu'}>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <NavLink to={item.url} activeClassName="active" className={item.cName} onClick={closeMenu}>
-                {item.title}
-              </NavLink>
-            </li>
-          );
-        })}
+        {MenuItems.map((item, index) => (
+          <li key={index}>
+            <NavLink
+              to={item.url}
+              className={item.cName}
+              activeClassName="active"
+              onClick={closeMenu}
+            >
+              {item.title}
+            </NavLink>
+          </li>
+        ))}
       </ul>
+
+      <ul className="party-button-ul">
+        <li>
+          <button
+            onClick={() => setPartyMode(prev => !prev)}
+            className={`party-btn ${partyMode ? 'active' : ''}`}
+            title={partyMode ? 'Stop Party' : 'Start Party'}
+          >
+            🎵
+          </button>
+        </li>
+      </ul>
+
+      <audio ref={audioRef} src={music} />
     </nav>
   );
 }
 
 export default Menu;
-
