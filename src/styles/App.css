@@ -8,17 +8,29 @@
 
 /* Portfolio component */
 .portfolio {
-  background: #FFFDF8; 
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .portfolio h1 {
+  font-size: 3.5rem;
+  color: #222;
+  font-weight: 700;
   text-align: center;
-  font-size: 3rem;
-  margin-top: 40px;
   margin-bottom: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.portfolio h1::after {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 4px;
+  background-color: #009688;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .portfolio-container {
@@ -50,7 +62,6 @@
   margin-bottom: 15px;
   text-align: center;
   font-size: 1.8rem;
-  color: #2e86c1;
   text-shadow: none;
 }
 
@@ -72,6 +83,20 @@
 
 .row img:hover {
   transform: scale(1.05);
+}
+
+.img-github-container img {
+  border: 3px solid #009688;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-github-container img:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
 }
 
 .img-github-container {
@@ -150,7 +175,6 @@
 
 .cert-main {
   height: 100%;
-  background: #FFFDF8;
   display: flex;
   align-items: center; 
   justify-content: center; 
@@ -158,14 +182,26 @@
 
 .cert-content {
   width: 90%; 
-  max-width: 1000px; 
 }
 
 .cert-content h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: #222;
+  font-weight: 700;
   text-align: center;
-  margin-top: 40px; 
-  margin-bottom: 0px; 
+  margin-bottom: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.cert-content h1::after {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 4px;
+  background-color: #009688;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .cert-content h3 {
@@ -176,24 +212,45 @@
 }
 
 .cert-content button {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 2rem;
-  font-size: 1.2rem;
-  background-color: #007bff;
+  padding: 15px 35px;
+  font-size: 18px;
   color: white;
+  background-image: linear-gradient(to right, #0072ff, #00c6ff);
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
   display: block;
-  margin: 20px auto; 
+  margin: 20px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cert-content button:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.cert-content button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, white, transparent);
+  transition: all 0.3s ease;
 }
+
+.cert-content button:hover:before {
+  left: 100%;
+}
+
+.cert-content button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+.cert-content button:focus {
+  outline: none;
+}
+
 
 .cert-content .cert1, .cert2, .cert3 {
   background-color: #eeeeee;
@@ -240,13 +297,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 .me-content {
   width: 100%;
   max-width: 900px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .me-content h1 {
@@ -261,7 +318,7 @@
 .me-content h1::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 90px;
   height: 4px;
   background-color: #009688;
   margin: 12px auto 0;
@@ -272,8 +329,20 @@
   font-size: 1.2rem;
   color: #444;
   line-height: 1.8;
-  margin-bottom: 20px;
   text-align: justify;
+}
+
+.me-content-p {
+  background: #eeeeee;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.me-content span {
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 .me-images {
@@ -282,6 +351,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .me-images img {
@@ -326,8 +396,12 @@
 
 .cv-title {
   font-size: 3.5rem;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .cv-title::after {
@@ -346,6 +420,11 @@
   align-items: center;
   width: 100%; 
   max-width: 21cm;
+}
+
+.cv-header-p {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cv-container {
