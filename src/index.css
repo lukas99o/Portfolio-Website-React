@@ -8,6 +8,84 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.light-mode {
+  background-color: 	#2A3439	;
+}
+
+body.light-mode h1 {
+  color: white;
+}
+
+body.light-mode p {
+  color: white;
+}
+
+body.light-mode h2 {
+  color: white;
+}
+
+/* All containers that need to go dark mode */
+body.light-mode .me-content-p {
+  background: 	#3E4A50;
+}
+
+body.light-mode .contact-body form {
+  background: #3E4A50;
+}
+
+body.light-mode .contact-body form input,
+body.light-mode .contact-body form textarea {
+  background: #6c757d;
+  color: #f0f0f0;
+  border: 1px solid #999;
+}
+
+body.light-mode .contact-body form input::placeholder,
+body.light-mode .contact-body form textarea::placeholder {
+  color: #ccc;
+}
+
+
+body.light-mode .cv-container {
+  background: #3E4A50;
+}
+
+body.light-mode .cv-header h1 {
+  color: white !important;
+}
+
+body.light-mode .cv-section {
+  color: white;
+}
+
+body.light-mode .row {
+  background: #3E4A50;
+}
+
+body.light-mode .cert1 {
+  background: #3E4A50;
+}
+
+body.light-mode .cert2 {
+  background: #3E4A50;
+}
+
+body.light-mode .cert3 {
+  background: #3E4A50;
+}
+
+body.light-mode .cert-content h3 {
+  color: white;
+}
+
+body.light-mode .modal-content {
+  background: #3E4A50;
+}
+
+body.light-mode .modal-content button {
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

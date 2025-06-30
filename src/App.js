@@ -5,7 +5,6 @@ import Me from './components/Me';
 import Cv from './components/Cv';
 import Portfolio from './components/Portfolio';
 import Certifications from './components/Certifications';
-import Contact from './components/Contact';
 import './styles/App.css';
 import useKeySequenceDetector from './hooks/KeySequenceDetector';
 
@@ -36,7 +35,6 @@ function App() {
             <Route exact path="/Cv" component={Cv} />
             <Route exact path="/Portfolio" component={Portfolio} />
             <Route exact path="/Certifications" component={Certifications} />
-            <Route exact path="/Contact" component={Contact} />
             <Redirect to="/Me" />
           </Switch>
         </Router>     

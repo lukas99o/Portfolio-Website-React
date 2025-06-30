@@ -60,6 +60,7 @@
 
 .party-button-ul {
   list-style-type: none;
+  display: flex;
 }
 
 .party-btn {
@@ -73,9 +74,6 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .party-btn:hover {
@@ -86,6 +84,33 @@
 .party-btn.active {
   background: #444;
   animation: pulse 1s infinite;
+}
+
+.light-btn {
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  background: #fafafa;
+  color: white;
+}
+
+.light-btn:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+.light-btn.active {
+  background: #444;
+}
+
+.lightbulb {
+  opacity: 0.5;
+  font-size: 2rem;
 }
 
 @keyframes pulse {
@@ -136,5 +161,9 @@
     width: auto;
     font-size: 1.5rem;
     padding: 1rem 2rem;
+  }
+
+  .menu-items {
+    justify-content: start;
   }
 }

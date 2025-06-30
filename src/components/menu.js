@@ -7,6 +7,7 @@ import music from "../audio/LEEONA_-_LEEONA_-_Do_I.mp3";
 function Menu() {
   const [clicked, setClicked] = useState(false);
   const [partyMode, setPartyMode] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
   const intervalRef = useRef(null);
   const audioRef = useRef(null);
 
@@ -49,6 +50,14 @@ function Menu() {
     };
   }, [partyMode]);
 
+  useEffect(() => {
+    if (lightMode) {
+      document.body.classList.add('light-mode');
+    } else {
+      document.body.classList.remove('light-mode');
+    }
+  }, [lightMode]);
+
   return (
     <nav className="menu-items">
       <div className="menu-icon" onClick={handleClick}>
@@ -70,6 +79,15 @@ function Menu() {
       </ul>
 
       <ul className="party-button-ul">
+        <li>
+          <button
+            onClick={() => setLightMode(prev => !prev)}
+            className={`light-btn ${lightMode ? 'active' : ''}`}
+            title={lightMode ? 'Light Off' : 'Light On'}
+          >
+           🔦
+          </button>
+        </li>
         <li>
           <button
             onClick={() => setPartyMode(prev => !prev)}

@@ -18,23 +18,26 @@ function Cert() {
                 <div className="cert-content">
                     <h1>Certifications</h1>
                     
-                    <div className="cert1">
-                        <h3>FreeCodeCamp Responsive Web Design Certification</h3>
-                        <button onClick={htmlCss}>Click to See Certificate</button>
-                        <img src={cert1} alt="Html, Css Certificate"/>
-                    </div>
+                    <div className="cert-container">
+                        <div className="cert1">
+                            <h3>FreeCodeCamp New Responsive Web Design Certification</h3>
+                            <button onClick={htmlCss}>Click to See Certificate</button>
+                            <img src={cert1} alt="Html, Css Certificate"/>
+                        </div>
 
-                    <div className="cert2">
-                        <h3>FreeCodeCamp Legacy JavaScript Algorithms and Data Structures Certification</h3>
-                        <button onClick={js}>Click to See Certificate</button>
-                        <img src={cert2} alt="legacy js Certificate"/>
-                    </div>
+                        <div className="cert2">
+                            <h3>FreeCodeCamp Legacy JavaScript Algorithms and Data Structures Certification</h3>
+                            <button onClick={js}>Click to See Certificate</button>
+                            <img src={cert2} alt="legacy js Certificate"/>
+                        </div>
 
-                    <div className="cert3">
-                        <h3>FreeCodeCamp New JavaScript Algorithms and Data Structures (Beta) Certification</h3>
-                        <button onClick={js}>Click to See Certificate</button>
-                        <img src={cert3} alt="new js Certificate"/>
+                        <div className="cert3">
+                            <h3>FreeCodeCamp New JavaScript Algorithms and Data Structures (Beta) Certification</h3>
+                            <button onClick={js}>Click to See Certificate</button>
+                            <img src={cert3} alt="new js Certificate"/>
+                        </div>
                     </div>
+                    
                 </div>
             </main>
         </div>
