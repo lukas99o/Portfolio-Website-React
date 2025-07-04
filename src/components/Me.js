@@ -1,6 +1,7 @@
 import React from 'react';
 import jag from '../images/Jag.jpg';
 import profilepicture from '../images/profil-bild.jpg';
+import friendship from '../images/friendship-app.png';
 
 function Me() {
     const [result, setResult] = React.useState("");
@@ -40,7 +41,7 @@ function Me() {
         <div className='me-body'>
             <div className="me-content">
                 <div>
-                    <h1>Me</h1>
+                    <h1>.Net Fullstack Developer</h1>
                     <div className="me-images">
                         <img src={jag} alt="Picture of me"/>
                         <img src={profilepicture} alt="Picture of me and my girlfriend on a big rock by the sea."/>
@@ -66,10 +67,33 @@ function Me() {
                     </div>
                 </div>
                 
+                <div>
+                    <div className="friendship-container">
+                    <h2>.Net Application Friendship</h2>
+                    <p>
+                        I built a .Net application called Friendship, which is a social media platform where you can create an account,
+                        add friends, message friends, create events and join events. It was built using .Net 8, Entity FrameWork Core, Identity Framework,
+                        Microsoft SQL Server and React. I tested the application with unit tests and integration tests using xUnit and Moq.
+                        The application is hosted on Azure and uses Azure SQL Server for the database. The source code is available on GitHub.
+                    </p>
+                    <div className="friendship-buttons">
+                        <a href="https://friendship-app.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
+                            <button>Website</button>
+                        </a>
+                        <a href="https://github.com/LukasOlsson/Friendship" target="_blank" rel="noopener noreferrer">
+                            <button>GitHub</button>
+                        </a>
+                        
+                    </div> 
+                    <img src={friendship} alt="Screenshot of the Friendship application" />      
+                    </div>
+                </div>
+                
+
                 <div className="contact-body">
                     <div className="contact-container">
                         <form onSubmit={onSubmit}>
-                        <h2 className="contact-title">Contact</h2>
+                        <h2 className="contact-title">Contact Me</h2>
                         <input type="text" id="name" name="name" placeholder="Name" required />
                         <input type="email" id="email" name="email" placeholder="Email" required />
                         <textarea id="message" name="message" rows="4" placeholder="Message" />

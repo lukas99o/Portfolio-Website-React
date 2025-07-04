@@ -86,6 +86,10 @@ body.light-mode .modal-content button {
   color: white;
 }
 
+body.light-mode .friendship-container {
+  background: #3E4A50;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

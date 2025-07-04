@@ -4,7 +4,7 @@ import MusicAPI from "../images/musicApi.webp";
 import c from "../images/c#.png";
 import romanNumerals from "../images/roman-numerals.png";
 import phone from "../images/phone.png"; 
-import palindrome from "../images/palindrome.jpg";
+import palindrome from "../images/palindromechecler.png";
 import nintendo from "../images/nintendo.png";
 import racin from "../images/racin.jpg";
 import paul from "../images/paul.jpg";

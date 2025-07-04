@@ -166,4 +166,8 @@
   .menu-items {
     justify-content: start;
   }
+
+  .party-button-ul button {
+    padding: 10px 15px;
+  }
 }
