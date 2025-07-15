@@ -77,10 +77,10 @@ function Me() {
                         The application is hosted on Azure and uses Azure SQL Server for the database. The source code is available on GitHub.
                     </p>
                     <div className="friendship-buttons">
-                        <a href="https://friendship-app.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://ashy-stone-09b187203.2.azurestaticapps.net" target="_blank" rel="noopener noreferrer">
                             <button>Website</button>
                         </a>
-                        <a href="https://github.com/LukasOlsson/Friendship" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/lukas99o/Friendship-App" target="_blank" rel="noopener noreferrer">
                             <button>GitHub</button>
                         </a>
                         
